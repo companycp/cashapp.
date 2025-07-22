@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CashApp Support</title>
+  <style>
+    :root {
+      --green: #00c244;
+      --black: #000;
+      --gray: #1e1e1e;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: var(--green);
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #aaa;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      margin-bottom: 40px;
+    }
+
+    .category {
+      background: var(--gray);
+      padding: 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .category:hover {
+      background: var(--green);
+      color: var(--black);
+    }
+
+    .category span {
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .category h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CashApp Support</h1>
+  <p>Welcome to CashApp Help Center. Choose a topic below to get started.</p>
+
+  <div class="categories">
+    <div class="category" onclick="selectTopic('Payments')">
+      <span>💸</span>
+      <h3>Payments</h3>
+      <p>Issues with sending or receiving money?</p>
+    </div>
+    <div class="category" onclick="selectTopic('Cash Card')">
+      <span>💳</span>
+      <h3>Cash Card</h3>
+      <p>Problems with your physical card?</p>
+    </div>
+    <div class="category" onclick="selectTopic('Security')">
+      <span>🔐</span>
+      <h3>Security</h3>
+      <p>Report fraud or suspicious activity.</p>
+    </div>
+    <div class="category" onclick="selectTopic('Bank Accounts')">
+      <span>🏦</span>
+      <h3>Bank Accounts</h3>
+      <p>Trouble linking or verifying a bank?</p>
+    </div>
+    <div class="category" onclick="selectTopic('Account Access')">
+      <span>👤</span>
+      <h3>Account Access</h3>
+      <p>Can't log in or reset password?</p>
+    </div>
+    <div class="category" onclick="selectTopic('Account Settings')">
+      <span>⚙️</span>
+      <h3>Account Settings</h3>
+      <p>Update your personal info and preferences.</p>
+    </div>
+    <div class="category" onclick="selectTopic('Investments')">
+      <span>📈</span>
+      <h3>Investment Help</h3>
+      <p>Support for stocks and Bitcoin transactions.</p>
+    </div>
+    <div class="category" onclick="selectTopic('Tax Documents')">
+      <span>📄</span>
+      <h3>Tax Documents</h3>
+      <p>Access tax forms and reporting documents.</p>
+    </div>
+    <div class="category" onclick="selectTopic('Business Tools')">
+      <span>🧾</span>
+      <h3>Business Tools</h3>
+      <p>Help with invoices and small business accounts.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 CashApp Support. All rights reserved.
+  </footer>
+
+  <script>
+    function selectTopic(topic) {
+      alert("You selected: " + topic);
+    }
+  </script>
+<!-- Begin of Chaport Live Chat code --> <script type="text/javascript"> (function(w,d,v3){ w.chaportConfig = { appId : '687fce5df93c3daa55b482cc' };  if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document); </script> <!-- End of Chaport Live Chat code -->
+</body>
+</html>
